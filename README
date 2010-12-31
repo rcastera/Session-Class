@@ -1,0 +1,1 @@
+This is a Session class for you guessed it, managing sessions. Back in the day, when there weren't many open source frameworks on the market, developers had to code things from scratch to achieve certain functionality. This class's inception, is the from one of those instances. With this class you can easily time-out your authenticated users after a specified interval.
