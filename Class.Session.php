@@ -130,23 +130,23 @@ class Session {
   }
 	  
 	  
-	/**
-    * @uses		generates new time.
-    * @access	public
-    * @param	none.
-    * @return  	the new time.
-    **/
-	private function generateNewTime() {
-	  	$currentHour = date('H'); // Get current hour.
-	  	$currentMin  = date('i'); // Get current minute.
-	  	$currentSec  = date('s'); // Get current second.
-	  	$currentMon  = date('m'); // Get current month.
-	  	$currentDay  = date('d'); // Get current day.
-	  	$currentYear = date('y'); // Get current year.
-	 
-	  	// Return the current time stamp.
-	  	return mktime($currentHour, ($currentMin + $this->time), $currentSec, $currentMon, $currentDay, $currentYear);
-	}
+  /**
+   * @uses		Generates new time.
+   * @access  Public
+   * @param	  None.
+   * @return  The new time.
+   */
+  private function generateNewTime() {
+    $currentHour = date('H'); // Get current hour.
+    $currentMin  = date('i'); // Get current minute.
+    $currentSec  = date('s'); // Get current second.
+    $currentMon  = date('m'); // Get current month.
+    $currentDay  = date('d'); // Get current day.
+    $currentYear = date('y'); // Get current year.
+  
+    // Return the current time stamp.
+    return mktime($currentHour, ($currentMin + $this->time), $currentSec, $currentMon, $currentDay, $currentYear);
+  }
 
 	
   /**
