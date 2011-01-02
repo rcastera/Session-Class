@@ -113,7 +113,7 @@ class Session {
 	
   /**
    * @uses		Returns the current time.
-   * @access	Public
+   * @access	Private
    * @param	  None.
    * @return  The current time.
    */
@@ -132,7 +132,7 @@ class Session {
 	  
   /**
    * @uses		Generates new time.
-   * @access  Public
+   * @access  Private
    * @param	  None.
    * @return  The new time.
    */
