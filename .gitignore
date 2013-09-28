@@ -1,1 +1,15 @@
-.DS_Store
+# Ingore common
+.DS_STORE
+.todo
+index.php
+cov/
+Common/
+
+# Ignore potentially sensitive phpunit file
+phpunit.xml
+
+# Ignore composer generated files
+composer.phar
+composer.lock
+composer-test.lock
+vendor/
