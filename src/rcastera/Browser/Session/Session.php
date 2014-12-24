@@ -48,8 +48,8 @@ class Session
     public function register($time = 60)
     {
         $_SESSION['session_id'] = session_id();
-        $_SESSION['session_start'] = $this->newTime();
         $_SESSION['session_time'] = intval($time);
+        $_SESSION['session_start'] = $this->newTime();
     }
 
     /**
@@ -84,7 +84,7 @@ class Session
      */
     public function get($key)
     {
-        return $_SESSION[$key];
+        return isset($_SESSION[$key]) ? $_SESSION[$key]:false;
     }
 
     /**
